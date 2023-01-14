@@ -57,6 +57,125 @@
 
   
     
+    <h3 class="article-title"><a href="/2023/01/14/关于MNIST的nn示例/"><span>基于MNIST数据集的识别训练</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2023/01/14/关于MNIST的nn示例/" rel="bookmark">
+        <time class="entry-date published" datetime="2023-01-14T12:56:32.007Z">
+          2023-01-14
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <ul>
+<li>本文基于python3.8，pytorch 1.13, cuda1.16(on NVIDIA RTX 3060 laptop), amdR7-6800H,win11 环境实现，</li>
+</ul>
+<h2 id="关于MNIST数据集"><a href="#关于MNIST数据集" class="headerlink" title="关于MNIST数据集"></a>关于MNIST数据集</h2><p>MNIST数据库是非常经典的一个数据集，就像学编程起初写一个“Hello Word”的程序一样，学Deep Learning 我们就会写识别MNIST数据集的Model。标准的MNIST数据集是由0〜9手写数字图片和数字标签所组成的，由60000个训练样本和10000个测试样本组成，每个样本都是一张28 * 28像素的灰度手写数字图片。  </p>
+<h2 id="关于本实例"><a href="#关于本实例" class="headerlink" title="关于本实例"></a>关于本实例</h2><p>本实例主要参考了pytorch组织的官方学习手册，将其手册逐步整理成为可运行的脚本，关于这份开源手册我个人认为是相当详尽和易于理解，并且循序渐进的，十分适合新手，同时也感谢ApacheCN组织为国内开源事业的贡献，他们详尽地翻译了大部分的官方文档。  </p>
+        
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/pytorch/">pytorch</a><a href="/tags/cnn/">cnn</a><a href="/tags/图像识别/">图像识别</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
+    <h3 class="article-title"><a href="/2023/01/12/开源社区和文档链接/"><span>开源社区和文档链接(持续更新)</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2023/01/12/开源社区和文档链接/" rel="bookmark">
+        <time class="entry-date published" datetime="2023-01-12T15:10:28.206Z">
+          2023-01-12
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <ul>
+<li>本文将持续收纳博主认为的优秀的开源社区文档</li>
+</ul>
+<h2 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.numpy.org.cn/reference/">python_numpy_zh_Cn</a></li>
+<li><a target="_blank" rel="noopener" href="https://numpy.org/devdocs/reference/index.html#reference">python_numpy_官方reference</a></li>
+</ul>
+<h2 id="pytorch"><a href="#pytorch" class="headerlink" title="pytorch"></a>pytorch</h2><ul>
+<li>入门<a target="_blank" rel="noopener" href="https://pytorch.apachecn.org/#/">pytorch_apache_zh_Cn</a></li>
+</ul>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/教程/">教程</a><a href="/tags/网页链接/">网页链接</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+
+
+  <article>
+
+  
+    
     <h3 class="article-title"><a href="/2023/01/10/2023-01-10-md语法/"><span>简易MD语法(测试用)</span></a></h3>
     
   
@@ -81,89 +200,7 @@
 <li>本文内容主要参考了<a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/links.html" title="最好的markdown教程">Markdown</a>的官方教程。</li>
 <li>可以使用Markdown的<a target="_blank" rel="noopener" href="https://markdown.com.cn/editor/">在线编译器</a>实时同步编译效果</li>
 </ul>
-<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>在单词或短语前面添加井号 (#) 。# 的数量代表了标题的级别。例如，添加三个 # 表示创建一个三级标题 (&lt;h3&gt;) (例如：### My Header)。最多可以用六个 ＃ </p>
-<p>还可以在文本下方添加任意数量的 &#x3D;&#x3D; 号来标识一级标题，或者 – 号来标识二级标题。</p>
-<h2 id="段落与换行"><a href="#段落与换行" class="headerlink" title="段落与换行"></a>段落与换行</h2><p>要创建段落，请使用空白行将一行或多行文本进行分隔。不要用空格（spaces）或制表符（ tabs）缩进段落。在一行的末尾添加两个或多个空格，然后按回车键,即可创建一个换行(&lt;br&gt;)。  </p>
-<p>为了兼容性，请在行尾添加“结尾空格”或 HTML 的 &lt;br&gt; 标签来实现换行。</p>
-<h2 id="强调语法"><a href="#强调语法" class="headerlink" title="强调语法"></a>强调语法</h2><p>要加粗文本，请在单词或短语的前后各添加两个<strong>星号（asterisks）</strong>或<strong>下划线（underscores）</strong>。如需加粗一个单词或短语的中间部分用以表示强调的话，请在要加粗部分的两侧各添加两个星号（asterisks）。  </p>
-<p>要用斜体显示文本，请在单词或短语<em>前后添加一个星号（asterisk）或下划线（underscore）</em>。要斜体突出单词的中间部分，请在字母前后各添加一个星号，中间不要带空格。  </p>
-<p>要同时用粗体和斜体突出显示文本，请在单词或短语的<em><strong>前后各添加三个星号或下划线</strong></em>。要加粗并用斜体显示单词或短语的中间部分，请在要突出显示的部分前后各添加三个星号，中间不要带空格。  </p>
-<p>Markdown 应用程序在如何处理单词或短语中间的下划线上并不一致。为兼容考虑，在单词或短语中间部分加粗的话，请使用星号（asterisks）。  </p>
-<h2 id="引用语法"><a href="#引用语法" class="headerlink" title="引用语法"></a>引用语法</h2><p>要创建块引用，请在段落前添加一个 &gt; 符号。  </p>
-<p>块引用可以包含多个段落。为段落之间的空白行添加一个 &gt; 符号。  </p>
-<p>块引用可以嵌套。在要嵌套的段落前添加一个 &gt;&gt; 符号。  </p>
-<h2 id="列表语法"><a href="#列表语法" class="headerlink" title="列表语法"></a>列表语法</h2><h4 id="1-有序列表"><a href="#1-有序列表" class="headerlink" title="1 有序列表"></a>1 有序列表</h4><p>要创建有序列表，请在每个列表项前添加数字并紧跟一个英文句点。数字不必按数学顺序排列，但是列表应当以数字 1 起始。例如：  </p>
-<ol>
-<li><p>First item</p>
-</li>
-<li><p>Second item</p>
-</li>
-<li><p>Third item</p>
-</li>
-<li><p>Fourth item</p>
-</li>
-<li><p>First item</p>
-</li>
-<li><p>Second item</p>
-</li>
-<li><p>Third item</p>
-<ol>
-<li>Indented item</li>
-<li>Indented item</li>
-</ol>
-</li>
-<li><p>Fourth item</p>
-</li>
-</ol>
-<h4 id="2-无序列表"><a href="#2-无序列表" class="headerlink" title="2 无序列表"></a>2 无序列表</h4><p>要创建无序列表，请在每个列表项前面添加破折号 (-)、星号 (*) 或加号 (+) 。缩进一个或多个列表项可创建嵌套列表。  </p>
-<ul>
-<li><p>First item</p>
-</li>
-<li><p>Second item</p>
-</li>
-<li><p>Third item</p>
-</li>
-<li><p>Fourth item</p>
-</li>
-<li><p>First item</p>
-</li>
-<li><p>Second item</p>
-</li>
-<li><p>Third item</p>
-<ul>
-<li>Indented item</li>
-<li>Indented item</li>
-</ul>
-</li>
-<li><p>Fourth item</p>
-</li>
-</ul>
-<p>另外，同一列表应当使用同一种标记符号，不应当混用。  </p>
-<h2 id="代码语法"><a href="#代码语法" class="headerlink" title="代码语法"></a>代码语法</h2><p>要将单词或短语表示为代码，请将其包裹在反引号 (&#96;) 中。  </p>
-<p>At the command prompt, type `nano`.<br>At the command prompt, type <code>nano</code>.</p>
-<p>如果你要表示为代码的单词或短语中包含一个或多个反引号，则可以通过将单词或短语包裹在双反引号(&#96;&#96;)中。  </p>
-<p>要创建代码块，请将代码块的每一行缩进至少四个空格或一个制表符。  </p>
-<pre><code>&lt;html&gt;
-  &lt;head&gt;
-  &lt;/head&gt;
-&lt;/html&gt;
-</code></pre>
-<h2 id="分割线语法"><a href="#分割线语法" class="headerlink" title="分割线语法"></a>分割线语法</h2><p>要创建分隔线，请在单独一行上使用三个或多个星号 (***)、破折号 (—) 或下划线 (___) ，并且不能包含其他内容。  </p>
-<h2 id="连接语法"><a href="#连接语法" class="headerlink" title="连接语法"></a>连接语法</h2><p>链接文本放在中括号内，链接地址放在后面的括号中，链接title可选。  </p>
-<p>超链接Markdown语法代码：[超链接显示名](超链接地址 “超链接title”)  </p>
-<p>对应的HTML代码：&lt;a href&#x3D;”超链接地址” title&#x3D;”超链接title”&gt;超链接显示名&lt;&#x2F;a&gt;  </p>
-<p>使用尖括号可以很方便地把URL或者email地址变成可点击的链接。  </p>
-<p>&lt;<a href="https://markdown.com.cn>">https://markdown.com.cn&gt;</a>  </p>
-<p>&lt;<a href="mailto:&#x66;&#97;&#107;&#x65;&#64;&#x65;&#120;&#97;&#109;&#x70;&#x6c;&#101;&#x2e;&#x63;&#111;&#x6d;">&#x66;&#97;&#107;&#x65;&#64;&#x65;&#120;&#97;&#109;&#x70;&#x6c;&#101;&#x2e;&#x63;&#111;&#x6d;</a>&gt;  </p>
-<p>强调链接, 在链接语法前后增加星号。 要将链接表示为代码，请在方括号中添加反引号。  </p>
-<p>不同的 Markdown 应用程序处理URL中间的空格方式不一样。为了兼容性，请尽量使用%20代替空格。  </p>
-<p>[link](<a target="_blank" rel="noopener" href="https://www.example.com/my%20great%20page">https://www.example.com/my%20great%20page</a>)</p>
-<h2 id="图片语法"><a href="#图片语法" class="headerlink" title="图片语法"></a>图片语法</h2><p>要添加图像，请使用感叹号 (!), 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。  </p>
-<p>插入图片Markdown语法代码：![图片alt](图片链接 “图片title”)。  </p>
-<p>对应的HTML代码：&lt;img src&#x3D;”图片链接” alt&#x3D;”图片alt” title&#x3D;”图片title”&gt;  </p>
-<p>给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中  </p>
-<p>[![沙漠中的岩石图片](&#x2F;assets&#x2F;img&#x2F;shiprock.jpg “Shiprock”)](<a target="_blank" rel="noopener" href="https://markdown.com.cn/">https://markdown.com.cn</a>)</p>
-
+        
       
     </div>
 
